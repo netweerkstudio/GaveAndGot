@@ -1,0 +1,127 @@
+---
+---
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <a href="/" class="logo">Gave<span>&</span>Got</a>
+      <p class="footer-desc">AI-powered cooking that turns your ingredients into delicious meals. Give ingredients, get meals.</p>
+    </div>
+    <div class="footer-links">
+      <div class="link-group">
+        <h4>Platform</h4>
+        <a href="#how-it-works">How it Works</a>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+      </div>
+      <div class="link-group">
+        <h4>Recipes</h4>
+        <a href="#">Quick Meals</a>
+        <a href="#">Budget Meals</a>
+        <a href="#">Vegetarian</a>
+      </div>
+      <div class="link-group">
+        <h4>Legal</h4>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#terms">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; {new Date().getFullYear()} Gave&Got. All rights reserved.</p>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background-color: #ffffff;
+    padding: 4rem 2rem 1.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    margin-top: 4rem;
+  }
+
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-brand {
+    max-width: 300px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--color-text);
+    text-decoration: none;
+    letter-spacing: -0.5px;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+
+  .logo span {
+    color: #10b981;
+  }
+
+  .footer-desc {
+    color: #6b7280;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+  }
+
+  .link-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .link-group h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.5rem;
+  }
+
+  .link-group a {
+    color: #6b7280;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .link-group a:hover {
+    color: var(--color-text);
+  }
+
+  .footer-bottom {
+    max-width: 1200px;
+    margin: 3rem auto 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    text-align: center;
+    color: #9ca3af;
+    font-size: 0.85rem;
+  }
+
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+    
+    .footer-links {
+      gap: 2.5rem;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+</style>

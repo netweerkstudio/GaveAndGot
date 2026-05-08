@@ -1,4 +1,4 @@
-$Message = Read-Host "Enter commit message (leave blank for 'Update site')"
+$Message = Read-Host "Enter commit message (leave blank for 'Update')"
 
 if ([string]::IsNullOrWhiteSpace($Message)) {
     $Message = "Update"
